@@ -1,11 +1,14 @@
-# --- Mis datos de la carnicería ---
-sueldo_cajero = 180000
-cobro_gaby = 90000
-ahorro_total = sueldo_cajero + cobro_gaby
+# Programa interactivo de ahorro
+print("--- CALCULADORA DE METAS ---")
 
-meta_pesos = 1000000
+# Usamos input() para que la computadora te pregunte a vos
+sueldo = int(input("¿Cuánto vas a cobrar este mes como cajero?: "))
+gaby = int(input("¿Cuánto le vas a cobrar a Gaby?: "))
 
-# --- Cálculo ---
-meses_para_meta = meta_pesos / ahorro_total
+ahorro_mensual = sueldo + gaby
+meta = 1000000
 
-print(f"Juntando ${ahorro_total} por mes, llego al millon en {meses_para_meta:.1f} meses.")
+meses = meta / ahorro_mensual
+
+print(f"\nResumen: Estás ahorrando ${ahorro_mensual} por mes.")
+print(f"Te faltan {meses:.1f} meses para ser millonario.")
